@@ -3,4 +3,4 @@ Posteriormente, cree tres instancias de este objeto y guárdalas en un array.
 Por último, utilice el método imprime datos para mostrar por pantalla los valores de los tres objetos instanciados.
 */ 
 
-[]
+class 

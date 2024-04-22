@@ -1,6 +1,6 @@
 /* 3-Escribe una clase que permita crear distintos objetos “rectángulos”, con las propiedades de alto y ancho, mas los métodos necesarios para modificar y mostrar sus propiedades, calcular el perímetro y el área*/
 
-class rectangulo {
+class Rectangulo {
   constructor(alto, ancho) {
     this.alto = alto;
     this.ancho = ancho;
@@ -25,7 +25,7 @@ class rectangulo {
   }
 }
 
-let rectangula = new rectangulo(6, 12);
+let rectangula = new Rectangulo(6, 12);
 rectangula.mostrarTamaño();
 rectangula.modTamaño(5, 10);
 

@@ -3,7 +3,7 @@
 class rectangulo {
   constructor(alto, ancho) {
     this.alto = alto;
-    this.alto = ancho;
+    this.ancho = ancho;
   }
 
   modTamaño(altoUno, ancho1) {
@@ -29,5 +29,5 @@ let rectangula = new rectangulo(6, 12);
 rectangula.mostrarTamaño();
 rectangula.modTamaño(5, 10);
 
-console.log("perimetro: " + rectangula.perimetro);
-console.log("area: " + rectangula.area);
+console.log("perimetro: " + rectangula.perimetro());
+console.log("area: " + rectangula.area());

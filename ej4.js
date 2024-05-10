@@ -9,24 +9,49 @@ class Producto {
     this.nombre = nombre;
     this.precio = precio;
   }
-  imprimirDatos() {
-    console.log(
-      " codigo: " +
-        this.codigo +
-        " nombre: " +
-        this.nombre +
-        " precio:$ " +
-        this.precio
-    );
+
+  get mostrarCodigo() {
+    return this.codigo;
+  }
+
+  get mostrarNombre() {
+    return this.nombre;
+  }
+
+  get mostrarPrecio() {
+    return this.precio;
+  }
+
+  set modificarCodigo(nuevoCodigo) {
+    this.codigo = nuevoCodigo;
+  }
+
+  set modificarNombre(nuevoNombre) {
+    this.nombre = nuevoNombre;
+  }
+
+  set cambiarPrecio(nuevoPrecio) {
+    this.precio = nuevoPrecio;
+  }
+
+  mostrarDetalle() {
+    return document.write(`<ul>
+    <li>Codigo: ${this.codigo}</li>
+    <li> Producto: ${this.nombre}</li>
+    <li>Precio: ${this.precio}</li>
+    </ul>`);
   }
 }
-let producto1 = new Producto("123", "Camiseta", 8000);
-let producto2 = new Producto("1234", "Shorts", 10000);
-let producto3 = new Producto("12345", "Zapatillas", 25000);
+let Productos = [];
 
-let productos = [producto1, producto2, producto3];
+let leche = new Producto("LS245", "Leche de almendras silk", 400);
+let chocolate = new Producto("AB213", "Block 300gr", 350);
+let galleta = new Producto("GS223", "Granix sin sal", 160);
 
-console.log("Info de productos:");
-productos.forEach((producto) => {
-  producto.imprimirDatos();
-});
+Productos.push(leche);
+Productos.push(chocolate);
+Productos.push(galleta);
+
+for (let i = 0; i < Productos.length; i++) {
+  Productos[i].mostrarDetalle();
+}

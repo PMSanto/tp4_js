@@ -6,9 +6,9 @@ class Rectangulo {
     this.ancho = ancho;
   }
 
-  modTamaño(altoUno, ancho1) {
-    this.alto = altoUno;
-    this.ancho = ancho1;
+  modTamaño(nuevoAlto, nuevoAncho) {
+    this.alto = nuevoAlto;
+    this.ancho = nuevoAncho;
     console.log("se modifico el tamaño");
   }
 
